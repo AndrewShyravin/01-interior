@@ -1,0 +1,12 @@
+.section__statistics {
+  background-color: #F4F0EC;
+  margin-bottom: 145px;
+}
+
+.statistics__inner {
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}

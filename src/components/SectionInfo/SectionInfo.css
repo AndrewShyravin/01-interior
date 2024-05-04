@@ -1,0 +1,15 @@
+.section__info {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.info__inner {
+  display: flex;
+  justify-content: space-around;
+}

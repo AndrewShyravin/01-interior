@@ -1,0 +1,14 @@
+.section__brand {
+  margin-bottom: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.brand__inner {
+  display: flex;
+  justify-content: space-around;
+}

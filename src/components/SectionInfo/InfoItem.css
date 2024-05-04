@@ -1,0 +1,26 @@
+.info__item {
+  width: 335px;
+  height: 252px;
+  text-align: center;
+}
+
+.info__title {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.info__text {
+  padding-bottom: 40px;
+  font-size: 22px;
+}
+
+.info__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.info__link img {
+  padding-left: 10px;
+}

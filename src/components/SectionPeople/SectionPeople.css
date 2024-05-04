@@ -1,0 +1,36 @@
+.section__people {
+  margin-bottom: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.people__inner {
+  display: flex;
+  flex-direction: column;
+  min-width: 1197px;
+  min-height: 650px;
+  background-color: #F4F0EC;
+  border-radius: 70px;
+}
+
+.people__top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.people__title {
+  font-size: 45px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 470px;
+}
+
+.person__items {
+  display: flex;
+  justify-content: space-around;
+}

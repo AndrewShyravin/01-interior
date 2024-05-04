@@ -1,0 +1,47 @@
+.project__text {
+  flex-direction: column;
+}
+
+.item__title {
+  font-size: 25px;
+}
+
+.item__text {
+  font-size: 22px;
+}
+
+.projects__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.project__btn {
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+  background-color: #F4F0EC;
+  border: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 20px;
+  width: 700px;
+  height: 700px;
+}

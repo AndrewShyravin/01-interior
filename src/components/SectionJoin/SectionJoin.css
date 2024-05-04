@@ -1,0 +1,48 @@
+.section__join {
+  margin-bottom: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.join__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #292F36;
+  border-radius: 70px;
+  height: 410px;
+}
+
+.join__title {
+  font-size: 50px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.join__text {
+  font-size: 22px;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.join__btn {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  background-color: #CDA274;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 20px 25px 20px 30px;
+  cursor: pointer;
+}
+
+.join__btn img {
+  padding-left: 30px;
+}

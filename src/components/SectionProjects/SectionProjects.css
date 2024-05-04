@@ -1,0 +1,30 @@
+.section__projects {
+  margin-bottom: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.inner__info {
+  flex-direction: column;
+  text-align: center;
+}
+
+.projects__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project__title {
+  font-size: 47px;
+  padding-bottom: 45px;
+}
+
+.project__text {
+  font-size: 22px;
+  padding-bottom: 70px;
+}

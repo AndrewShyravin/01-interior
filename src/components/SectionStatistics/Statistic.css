@@ -1,0 +1,20 @@
+.statistic__title {
+  font-size: 85px;
+  color: #CDA274;
+}
+
+.statistic__text {
+  font-size: 22px;
+}
+
+.statistic {
+  width: 305px;
+}
+
+.statistic-one {
+  border-right: 1px solid #CDA274;
+}
+
+.statistic-one:last-child {
+  border-right: none;
+}

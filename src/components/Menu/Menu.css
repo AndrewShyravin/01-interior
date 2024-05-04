@@ -1,0 +1,25 @@
+.nav {
+  height: 106px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.nav a {
+  font-size: 20px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 0 40px;
+}
+
+.menu__item:hover {
+  color: #CDA274;
+}

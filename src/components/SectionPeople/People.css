@@ -1,0 +1,31 @@
+.people__person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFF;
+  border-radius: 30px;
+  width: 350px;
+  height: 290px;
+  padding: 30px;
+}
+
+.person__info {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.person__photo {
+  padding-right: 15px;
+}
+
+.person__name {
+  font-size: 25px;
+}
+
+.person__city {
+  font-size: 18px;
+}
+
+.person__text {
+  font-size: 18px;
+}

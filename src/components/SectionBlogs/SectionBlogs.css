@@ -1,0 +1,37 @@
+.section__blogs {
+  margin-bottom: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+}
+
+.blogs__top {
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.blogs__title {
+  font-size: 48px;
+  padding-bottom: 20px;
+}
+
+.item__date-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.blogs__text {
+  font-size: 22px;
+}
+
+
+.blogs__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+}
