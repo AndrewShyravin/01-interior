@@ -1,12 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { useAppDispatch } from '../../hooks/hooks';
-import { useAuth } from '../../hooks/useAuth';
 import { deleteUser } from '../../redux/userSlice';
 import logo from '../../image/logo.svg';
 import './Menu.css';
 
 const Header = () => {
-  const { email } = useAuth();
   const dispatch = useAppDispatch();
   return (
     <>

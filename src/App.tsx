@@ -14,6 +14,8 @@ import MainLayout from './layouts/MainLayout';
 import './App.css';
 import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
+import { useAuth } from './hooks/useAuth';
+import AuthLayout from './layouts/AuthLayout';
 
 function App() {
   const dispatch = useAppDispatch();
@@ -54,18 +56,26 @@ function App() {
     addBlogsViaAPI();
   }, []);
 
+  const { isAuth } = useAuth();
+
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="register" element={<RegisterPage />} />
-          <Route path="login" element={<LoginPage />} />
-          <Route path="about" element={<AboutUs />} />
-          <Route path="services" element={<Services />} />
-          <Route path="pages" element={<Pages />} />
-          <Route path="contact" element={<ContatcUs />} />
-        </Route>
+        {isAuth ? (
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="about" element={<AboutUs />} />
+            <Route path="services" element={<Services />} />
+            <Route path="pages" element={<Pages />} />
+            <Route path="contact" element={<ContatcUs />} />
+          </Route>
+        ) : (
+          <Route path="/" element={<AuthLayout />}>
+            <Route index element={<RegisterPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+          </Route>
+        )}
       </Routes>
     </div>
   );
