@@ -1,0 +1,29 @@
+.login__page {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 10px 0;
+}
+
+.login__form {
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  background-color: #e7e4c2;
+}
+
+.login__form h1 {
+  padding-bottom: 20px;
+}
+
+.login__form p {
+  padding-top: 20px;
+  font-size: 20px;
+}

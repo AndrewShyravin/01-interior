@@ -23,3 +23,15 @@
 .menu__item:hover {
   color: #CDA274;
 }
+
+.nav button {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #CDA274;
+  color: bisque;
+}
+
+.nav button:hover {
+  background-color: #ebba85;
+}

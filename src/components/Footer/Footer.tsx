@@ -1,4 +1,3 @@
-import React from 'react';
 import FooterSociety from './FooterSociety';
 import FooterColums from './FooterColums';
 import './Footer.css';

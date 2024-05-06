@@ -1,21 +1,21 @@
 [
   {
-    "photo": "/static/media/projects-1.b2e4564288af01871227.png",
+    "photo": "image/projects-1.png",
     "title": "Winery Dry Creek Building",
     "text": "Art Modern"
   },
   {
-    "photo": "/static/media/projects-2.e9d0ccc710280e054f3b.png",
+    "photo": "image/projects-2.png",
     "title": "Creative Workplace Design",
     "text": "Minimalist"
   },
   {
-    "photo": "/static/media/projects-3.a8029425ee76bf57f732.png",
+    "photo": "image/projects-3.png",
     "title": "Bedroom Interior Pot Work",
     "text": "Modern"
   },
   {
-    "photo": "/static/media/projects-4.b2e67a92d727d892d5d7.png",
+    "photo": "image/projects-4.png",
     "title": "Light Ambience Sepia Design",
     "text": "Scandinavian"
   }

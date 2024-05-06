@@ -1,4 +1,3 @@
-import React from 'react';
 import { useAppSelector } from '../../hooks/hooks';
 import { selectBlogs } from '../../redux/blogsSlice';
 import Blog from './Blog';
@@ -18,9 +17,14 @@ const SectionBlogs = () => {
           </p>
         </div>
         <div className="blogs__items">
-          {blogs.map((blog) => {
+          {blogs.map((blog, index) => {
             return (
-              <Blog photo={blog.photo} title={blog.title} date={blog.date} />
+              <Blog
+                photo={blog.photo}
+                title={blog.title}
+                date={blog.date}
+                key={index}
+              />
             );
           })}
         </div>

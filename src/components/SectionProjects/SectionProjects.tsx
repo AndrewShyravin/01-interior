@@ -1,4 +1,3 @@
-import React from 'react';
 import { useAppSelector } from '../../hooks/hooks';
 import { selectProjects } from '../../redux/projectsSlice';
 import Projects from './Projects';
@@ -20,12 +19,13 @@ const SectionProjects = () => {
             </p>
           </div>
           <div className="projects__items">
-            {projects.map((project) => {
+            {projects.map((project, index) => {
               return (
                 <Projects
                   title={project.title}
                   photo={project.photo}
                   text={project.text}
+                  key={index}
                 />
               );
             })}

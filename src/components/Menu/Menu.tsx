@@ -1,9 +1,13 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Menu.css';
+import { useAppDispatch } from '../../hooks/hooks';
+import { useAuth } from '../../hooks/useAuth';
+import { deleteUser } from '../../redux/userSlice';
 import logo from '../../image/logo.svg';
+import './Menu.css';
 
 const Header = () => {
+  const { email } = useAuth();
+  const dispatch = useAppDispatch();
   return (
     <>
       <div className="container">
@@ -36,6 +40,9 @@ const Header = () => {
               <NavLink to="contact" className="menu__link">
                 Contact Us
               </NavLink>
+            </li>
+            <li>
+              <button onClick={() => dispatch(deleteUser())}>Logout</button>
             </li>
           </ul>
         </nav>

@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionInteror from '../SectionInterior/SectionInterior';
 import SectionInfo from '../SectionInfo/SectionInfo';
 import SectionDesign from '../SectionDesign/SectionDesign';

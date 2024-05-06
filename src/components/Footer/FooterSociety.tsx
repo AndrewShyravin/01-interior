@@ -1,4 +1,3 @@
-import React from 'react';
 import './FooterSociety.css';
 import facebook from '../../image/facebook.svg';
 import twitter from '../../image/twitter.svg';

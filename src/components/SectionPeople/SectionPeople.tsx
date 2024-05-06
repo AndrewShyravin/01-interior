@@ -1,4 +1,3 @@
-import React from 'react';
 import { useAppSelector } from '../../hooks/hooks';
 import { selectPersons } from '../../redux/personsSlice';
 import People from './People';
@@ -17,13 +16,14 @@ const SectionPeople = () => {
             </h1>
           </div>
           <div className="person__items">
-            {persons.map((person) => {
+            {persons.map((person, index) => {
               return (
                 <People
                   photo={person.photo}
                   name={person.name}
                   city={person.city}
                   text={person.text}
+                  key={index}
                 />
               );
             })}

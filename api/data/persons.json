@@ -1,18 +1,18 @@
 [
   {
-    "photo": "/static/media/person-1.6e6ebe0af8ccb188a2d0.png",
+    "photo": "image/person-1.png",
     "name": "Lisa Clairton",
     "city": "New York, USA",
     "text": "We selected Interno interior because of rigorous design background & education."
   },
   {
-    "photo": "/static/media/person-2.e72e0dd2721da0a01220.png",
+    "photo": "image/person-2.png",
     "name": "David Knight",
     "city": "Sydney, Australia",
     "text": "The team exceeded our expectations and emerged as leaders of our project’s."
   },
   {
-    "photo": "/static/media/person-3.c97da14750baba614462.png",
+    "photo": "image/person-3.png",
     "name": "Alice Brown",
     "city": "Paris, France",
     "text": "They balanced the architectural vision and the project realities beautifully."
