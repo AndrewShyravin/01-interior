@@ -1,0 +1,46 @@
+.contact__form-form {
+  width: 500px;
+  height: 500px;
+  background-color: #292F36;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+}
+
+.contact__form-form form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contact__form-form label {
+  font-size: 20px;
+}
+
+.contact__from-input {
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.input__comments {
+  height: 100px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+
+}
+
+.contact__btn {
+  margin-top: 10px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #CDA274;
+  border: none;
+}

@@ -1,0 +1,28 @@
+.contact {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.contact__text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact__text h1 {
+  font-size: 48px;
+}
+
+.contact__text p {
+  font-size: 22px;
+}
+
+.contact__form {
+  display: flex;
+  justify-content: center;
+}

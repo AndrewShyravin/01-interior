@@ -1,0 +1,24 @@
+.contact__form-info {
+  background-color: #CDA274;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.contact__form-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact__form-info li {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.contact__form-info li svg {
+  margin-right: 10px;
+}
