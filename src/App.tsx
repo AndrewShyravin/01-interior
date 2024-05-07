@@ -61,21 +61,21 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        {/* {isAuth ? ( */}
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/pages" element={<Pages />} />
-          <Route path="/contact" element={<ContatcUs />} />
-        </Route>
-        {/* ) : ( */}
-        {/* <Route path="/" element={<AuthLayout />}>
+        {isAuth ? (
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/pages" element={<Pages />} />
+            <Route path="/contact" element={<ContatcUs />} />
+          </Route>
+        ) : (
+          <Route path="/" element={<AuthLayout />}>
             <Route index element={<RegisterPage />} />
             <Route path="login" element={<LoginPage />} />
             <Route path="register" element={<RegisterPage />} />
           </Route>
-        )} */}
+        )}
       </Routes>
     </div>
   );

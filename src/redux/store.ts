@@ -3,6 +3,7 @@ import personsReducer from './personsSlice';
 import projectsReducer from './projectsSlice';
 import blogsReducer from './blogsSlice';
 import userReducer from './userSlice';
+import { contactsApi } from './contactsApi';
 import { PersonType, ProjectType, BlogType } from '../types';
 import { UserType } from '../types/User';
 
@@ -19,7 +20,10 @@ const store = configureStore({
     projects: projectsReducer,
     blogs: blogsReducer,
     user: userReducer,
+    [contactsApi.reducerPath]: contactsApi.reducer,
   },
+  middleware: (getDefaultMiddware) =>
+    getDefaultMiddware().concat(contactsApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
