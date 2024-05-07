@@ -15,7 +15,7 @@ const Blog: FunctionComponent<BlogType> = ({ photo, title, date }) => {
   };
   return (
     <div className="blogs__item">
-      <img src={photo} alt="photo" />
+      <img className='blogs__item-img' src={photo} alt="photo" />
       <h2 className="item__title">{title}</h2>
       <div className="item__date-button">
         <p className="item__date">{date}</p>
@@ -25,7 +25,7 @@ const Blog: FunctionComponent<BlogType> = ({ photo, title, date }) => {
         {isOpenModal && (
           <div className="modal__blogs">
             <div className="window__blogs">
-              <img src={photo} alt="photo" />
+              <img className='blogs__item-img' src={photo} alt="photo" />
               <h2 className="item__title">{title}</h2>
               <p className="item__date">{date}</p>
               <button onClick={closeModal} className="blog__btn">

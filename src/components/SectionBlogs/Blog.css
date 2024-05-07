@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.blogs__item-img {
+  max-width: 100%;
+}
+
 .blogs__item {
   padding: 20px;
 }

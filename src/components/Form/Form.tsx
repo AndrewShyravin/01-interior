@@ -14,12 +14,16 @@ const Form: React.FC<FromProps> = ({ title, handleClick }) => {
     <div className="form">
       <input
         type="email"
+        autoComplete="current-email"
+        id="email"
         placeholder="email"
         value={email}
         onChange={(event) => setEmail(event.target.value)}
       />
       <input
         type="password"
+        autoComplete="current-password"
+        id="password"
         placeholder="password"
         value={password}
         onChange={(event) => setPassword(event.target.value)}

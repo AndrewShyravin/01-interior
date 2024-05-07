@@ -2,6 +2,25 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  background-image: url(../../image/interior.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.login__inner {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: relative;
+}
+
+.login__text {
+  margin-top: 300px;
+  font-size: 40px;
 }
 
 .container {
@@ -14,13 +33,15 @@
   padding: 20px;
   width: 500px;
   height: 300px;
-  border: 1px solid #555;
   border-radius: 20px;
-  background-color: #e7e4c2;
+  color: #fff;
+  background-color: #292F36;
+
 }
 
 .login__form h1 {
   padding-bottom: 20px;
+  color: #fff;
 }
 
 .login__form p {

@@ -7,7 +7,6 @@ import SectionProjects from '../SectionProjects/SectionProjects';
 import SectionStatistics from '../SectionStatistics/SectionStatistics';
 import SectionBlogs from '../SectionBlogs/SectionBlogs';
 import SectionJoin from '../SectionJoin/SectionJoin';
-import Footer from '../Footer/Footer';
 
 const Home = () => {
   return (
@@ -21,7 +20,6 @@ const Home = () => {
       <SectionStatistics />
       <SectionBlogs />
       <SectionJoin />
-      <Footer />
     </>
   );
 };

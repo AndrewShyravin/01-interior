@@ -2,6 +2,10 @@
   flex-direction: column;
 }
 
+.projects__item-img-modal {
+  max-width: 500px;
+}
+
 .item__title {
   font-size: 25px;
 }

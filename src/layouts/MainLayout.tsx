@@ -1,12 +1,21 @@
 import { Outlet } from 'react-router-dom';
 import Menu from '../components/Menu/Menu';
-import { useAuth } from '../hooks/useAuth';
+import Footer from '../components/Footer/Footer';
 
 const MainLayout = () => {
   return (
     <div>
-      <Menu />
-      <Outlet />
+      <header>
+        <Menu />
+      </header>
+
+      <main>
+        <Outlet />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

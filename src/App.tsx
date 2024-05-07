@@ -9,7 +9,7 @@ import HomePage from './components/HomePage/HomePage';
 import AboutUs from './components/AboutUsPage/AboutUs';
 import Services from './components/ServicesPage/Services';
 import Pages from './components/PagesPage/Pages';
-import ContatcUs from './components/ContactUsPage/ContatcUs';
+import ContatcUs from './components/ContactUsPage/ContactUs';
 import MainLayout from './layouts/MainLayout';
 import './App.css';
 import LoginPage from './components/LoginPage/LoginPage';
@@ -64,16 +64,16 @@ function App() {
         {isAuth ? (
           <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
-            <Route path="about" element={<AboutUs />} />
-            <Route path="services" element={<Services />} />
-            <Route path="pages" element={<Pages />} />
-            <Route path="contact" element={<ContatcUs />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/pages" element={<Pages />} />
+            <Route path="/contact" element={<ContatcUs />} />
           </Route>
         ) : (
           <Route path="/" element={<AuthLayout />}>
             <Route index element={<RegisterPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
+            <Route path="login" element={<LoginPage />} />
+            <Route path="register" element={<RegisterPage />} />
           </Route>
         )}
       </Routes>
