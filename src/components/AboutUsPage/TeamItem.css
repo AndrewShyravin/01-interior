@@ -1,0 +1,29 @@
+.team__item {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.team__item img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.team__item-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.team__title-person {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.team__text-person {
+  font-size: 18px;
+}

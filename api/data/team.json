@@ -1,0 +1,22 @@
+[
+  {
+    "photo": "image/team-1.jpg",
+    "name": "Anna Brown",
+    "profession": "Interior Designer"
+  },
+  {
+    "photo": "image/team-2.jpg",
+    "name": "Dean Wild",
+    "profession": "3D Visualizer"
+  },
+  {
+    "photo": "image/team-3.jpg",
+    "name": "Lucy Highlight",
+    "profession": "Project Manager"
+  },
+  {
+    "photo": "image/team-4.jpg",
+    "name": "Jhon Grey",
+    "profession": "Architectural Designer"
+  }
+]

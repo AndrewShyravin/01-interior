@@ -3,15 +3,22 @@ import personsReducer from './personsSlice';
 import projectsReducer from './projectsSlice';
 import blogsReducer from './blogsSlice';
 import userReducer from './userSlice';
+import teamReducer from './teamSlice';
 import { contactsApi } from './contactsApi';
-import { PersonType, ProjectType, BlogType } from '../types';
-import { UserType } from '../types/User';
+import {
+  PersonType,
+  ProjectType,
+  BlogType,
+  TeamType,
+  UserType,
+} from '../types';
 
 export type StoreType = {
   persons: PersonType[];
   projects: ProjectType[];
   blogs: BlogType[];
   user: UserType;
+  team: TeamType[];
 };
 
 const store = configureStore({
@@ -21,6 +28,7 @@ const store = configureStore({
     blogs: blogsReducer,
     user: userReducer,
     [contactsApi.reducerPath]: contactsApi.reducer,
+    team: teamReducer,
   },
   middleware: (getDefaultMiddware) =>
     getDefaultMiddware().concat(contactsApi.middleware),

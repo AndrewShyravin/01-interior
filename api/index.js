@@ -5,6 +5,7 @@ const blogsData = require('./data/blogs.json');
 const personData = require('./data/persons.json');
 const projectsData = require('./data/projects.json');
 const contactsData = require('./data/contacts.json');
+const teamData = require('./data/team.json');
 
 const app = express();
 
@@ -44,6 +45,10 @@ app.post('/contacts', (req, res) => {
 
 app.get('/contacts', (req, res) => {
   res.json(contactsData);
+});
+
+app.get('/team', (req, res) => {
+  res.json(teamData);
 });
 
 const port = process.env.PORT || 4000;

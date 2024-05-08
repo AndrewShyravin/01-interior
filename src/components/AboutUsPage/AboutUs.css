@@ -1,0 +1,55 @@
+.about {
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+
+.container {
+  min-width: 1220px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.about__title {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about__company {
+  margin-bottom: 50px;
+}
+
+.about__company-title {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.about__company-text {
+  font-size: 22px;
+}
+
+.team__title {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.team__text {
+  font-size: 22px;
+}
+
+.team__container {
+  display: flex;
+  justify-content: center;
+}
+
+.team__items {
+  width: 850px;
+  height: 450px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  background-color: #F4F0EC;
+  border-radius: 70px;
+  gap: 40px;
+  padding: 50px;
+}
