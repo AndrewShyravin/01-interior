@@ -5,7 +5,6 @@ import './News.css';
 
 const News = () => {
   const news = useAppSelector(selectNews);
-  console.log(news);
   return (
     <div className="news">
       <h1>News</h1>

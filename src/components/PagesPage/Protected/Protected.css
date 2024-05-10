@@ -1,0 +1,39 @@
+.protected {
+  margin-top: 10px;
+  margin-bottom: 150px;
+  padding-right: 15px;
+}
+
+.protected__img {
+  max-width: 1100px;
+  padding-bottom: 30px;
+  border-radius: 130px;
+  opacity: 0.95;
+}
+
+.protected__text {
+  text-align: left;
+}
+
+.protected h1 {
+  padding-bottom: 30px;
+}
+
+.protected p {
+  padding-bottom: 30px;
+}
+
+.protected ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.protected li {
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  border-radius: 18px;
+
+}

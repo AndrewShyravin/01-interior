@@ -90,7 +90,6 @@ function App() {
       try {
         const res = await axios.get('http://localhost:4000/news');
         dispatch(setNews(res.data));
-        console.log(res.data);
       } catch (error) {
         console.log('Error fetching projects');
       }
@@ -111,7 +110,6 @@ function App() {
           <Route path="pages/*" element={<Pages />} />
           <Route path="contact" element={<ContatcUs />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/lol" element={<News />} />
         </Route>
         {/* ) : (
           <Route path="/" element={<AuthLayout />}>
