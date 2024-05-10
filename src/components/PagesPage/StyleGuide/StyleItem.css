@@ -1,0 +1,28 @@
+.style__item {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #E7E7E7;
+  border-radius: 20px;
+  justify-content: start;
+  width: 1000px;
+}
+
+.style__item-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.style__item-title {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.style__item-text {
+  font-size: 22px;
+}
+
+.style__item-photo {
+  width: 500px;
+}

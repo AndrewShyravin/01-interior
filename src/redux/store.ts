@@ -4,6 +4,8 @@ import projectsReducer from './projectsSlice';
 import blogsReducer from './blogsSlice';
 import userReducer from './userSlice';
 import teamReducer from './teamSlice';
+import styleReducer from './styleSlice';
+import newsReducer from './newsSlice';
 import { contactsApi } from './contactsApi';
 import {
   PersonType,
@@ -11,6 +13,8 @@ import {
   BlogType,
   TeamType,
   UserType,
+  StyleType,
+  NewsType,
 } from '../types';
 
 export type StoreType = {
@@ -19,6 +23,8 @@ export type StoreType = {
   blogs: BlogType[];
   user: UserType;
   team: TeamType[];
+  style: StyleType[];
+  news: NewsType[];
 };
 
 const store = configureStore({
@@ -29,6 +35,8 @@ const store = configureStore({
     user: userReducer,
     [contactsApi.reducerPath]: contactsApi.reducer,
     team: teamReducer,
+    style: styleReducer,
+    news: newsReducer,
   },
   middleware: (getDefaultMiddware) =>
     getDefaultMiddware().concat(contactsApi.middleware),

@@ -1,5 +1,5 @@
 import './FooterColums.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const FooterTable = () => {
   return (
@@ -7,37 +7,37 @@ const FooterTable = () => {
       <div>
         <h1>Pages</h1>
         <p>
-          <NavLink to=".">Style Guide</NavLink>
+          <Link to="pages">Style Guide</Link>
         </p>
         <p>
-          <NavLink to=".">Protected</NavLink>
+          <Link to="pages/protected">Protected</Link>
         </p>
         <p>
-          <NavLink to=".">Licenses</NavLink>
+          <Link to="pages/licenses">Licenses</Link>
         </p>
         <p>
-          <NavLink to=".">Changelog</NavLink>
+          <Link to="pages/news">News</Link>
         </p>
         <p>
-          <NavLink to=".">404</NavLink>
+          <Link to="pages/notfound">404</Link>
         </p>
       </div>
       <div>
         <h1>Explore</h1>
         <p>
-          <NavLink to="/about">About Us</NavLink>
+          <Link to="/about">About Us</Link>
         </p>
         <p>
-          <NavLink to=".">Recent Blog</NavLink>
+          <Link to=".">Recent Blog</Link>
         </p>
         <p>
-          <NavLink to=".">Pricing Plan</NavLink>
+          <Link to=".">Pricing Plan</Link>
         </p>
         <p>
-          <NavLink to=".">Our Projects</NavLink>
+          <Link to=".">Our Projects</Link>
         </p>
         <p>
-          <NavLink to="/contact">Contact Us</NavLink>
+          <Link to="/contact">Contact Us</Link>
         </p>
       </div>
       <div>

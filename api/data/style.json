@@ -1,0 +1,37 @@
+[
+  {
+    "title": "NEOCLASSICISM",
+    "text": "Neoclassicism Interior Design. Suitable for conservative and traditional individuals, this style incorporates elements of ancient architecture, conveying a sense of solidity and weightiness. In modern interiors, classical style is often combined with other styles, creating beautiful variations.",
+    "photo": "image/style-1.jpg"
+  },
+  {
+    "title": "FUSION",
+    "text": "Fusion Interior Design. This style is perfect for modern, dynamic, and vibrant personalities—those who want to express themselves, their preferences, and interests. Fusion involves blending different styles, allowing for the creation of unique and unprecedented interiors. This style is at the forefront of interior design trends, symbolizing contemporary globalization, blending elements of classicism and abstractionism, Eastern and Western cultures, sensuality, and practicality. Its charm lies in unlimited creativity. We take a classical interior as a base and add whatever we like. Lack of meticulous detail, casual elegance, and bohemian chic characterize this style.",
+    "photo": "image/style-2.jpg"
+  },
+  {
+    "title": "HIGH-TECH",
+    "text": "High-Tech Interior Design. Ideal for young, ambitious, and tech-savvy individuals who follow trends, appreciate technological advancements, and prioritize functionality. The high-tech style emerged during the era of rapid technological advancement and space exploration. Designers' rebellious desire to break the conventional norms of classical interior design gave birth to a new style, which has dominated the world of interior design for several decades. Simple lines in creating shapes, high technology, material aesthetics, and maximum functionality are its main features.",
+    "photo": "image/style-3.jpg"
+  },
+  {
+    "title": "LOFT",
+    "text": "Loft Interior Design. Perfect for those who seek space, ample air, freedom of movement, the loft style or its latest interpretation—industrial—will suit them well. The English word 'loft' means an attic, room on the top floor, or the uppermost floor itself. Although the concept of the loft style began in New York City's Manhattan district in the early twentieth century, it was only recently that it gained popularity. The premises of non-working workshops and studios were rented out to impoverished artists, musicians, and performers. Today, loft-style living is considered exclusive and unaffordable for the poor pioneers of this style.",
+    "photo": "image/style-4.jpg"
+  },
+  {
+    "title": "PROVENCE",
+    "text": "Provence Interior Design. For those who seek closeness to nature, love the summer sun, the smell of flowers, and cherish homely comfort.Provence style is one of the country-style directions, encompassing several varieties. Despite its diversity, the country style has won the widest audience. The measured rural life gives a sense of tranquility. Sun-faded colors, large windows, many live and dried plants, naturalness, simplicity, and unpretentiousness of lines are its distinctive features. The style is characterized by archaism, with changes accepted by villagers slowly and cautiously.",
+    "photo": "image/style-5.jpg"
+  },
+  {
+    "title": "SCANDINAVIAN",
+    "text": "Scandinavian Interior Design. Ideal for those who appreciate warmth, comfort, and the feeling of security in their personal space. This style embodies simplicity, individuality, and eco-friendliness.For those who appreciate warmth, comfort, and security, the Scandinavian style embodies simplicity, individuality, and eco-friendliness. If you choose Scandinavian interior design, be prepared for smooth, calm lines and shapes without strong curves or discontinuities. The forms reflect a philosophical approach to life—it should be calm, without unnecessary overloads, instilling confidence in the reliability of tomorrow.",
+    "photo": "image/style-6.jpg"
+  },
+  {
+    "title": "ETHNIC",
+    "text": "Ethnic Interior Design. For those who want to find something akin to themselves, value comfort and naturalness, seek to return to their roots, or hold memories of a distant country close to their hearts.Ethnic style is characterized by the presence of folk elements in the interior belonging to the culture of a particular country. Important! Do not mix different cultures. Avoid hanging a Mexican sombrero on a Japanese screen. Therefore, if you plan to decorate your interior in an ethnic style, first determine the culture of the people you want to see as the basis of your interior.",
+    "photo": "image/style-7.jpg"
+  }
+]

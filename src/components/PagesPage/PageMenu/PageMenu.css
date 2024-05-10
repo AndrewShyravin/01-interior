@@ -1,0 +1,26 @@
+/* .page__menu nav {
+  width: 300px;
+  text-align: left;
+} */
+
+.page__ul li {
+  border: 1px solid #fff;
+  width: 200px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+
+.page__ul li:hover {
+  background-color: #CDA274;
+}
+
+.page__ul-hide {
+  display: none;
+  padding: 0;
+}
+
+.nav__inner {
+  display: flex;
+}

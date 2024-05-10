@@ -1,6 +1,6 @@
-import React from 'react';
-import '../SectionInterior/SectionInterior.css';
 import btn__arrow from '../../image/arrow-btn.svg';
+import { Link } from 'react-router-dom';
+import '../SectionInterior/SectionInterior.css';
 
 const SectionInteror = () => {
   return (
@@ -12,10 +12,12 @@ const SectionInteror = () => {
             The world needs innovators and problem solvers who turn challenges
             into greater opportunities.
           </p>
-          <button className="interior__btn">
-            Get Started
-            <img src={btn__arrow} alt="arrow" />
-          </button>
+          <Link to="/contact">
+            <button className="interior__btn">
+              Get Started
+              <img src={btn__arrow} alt="arrow" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

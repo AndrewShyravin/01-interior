@@ -1,0 +1,16 @@
+.news {
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+
+.news h1 {
+  padding-bottom: 30px;
+}
+
+.news__items {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}

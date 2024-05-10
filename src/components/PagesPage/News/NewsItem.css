@@ -1,0 +1,27 @@
+.news__item {
+  border: 1px solid #e7e7e7;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.news__item-info {
+  /* background-color: #F4F0EC; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.news__item-img {
+  max-width: 385px;
+}
+
+.news__item-title {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.news__item-date {
+  font-size: 16px;
+  color: #292F36;
+  ;
+}

@@ -1,0 +1,11 @@
+.pages__layout {
+  display: flex;
+}
+
+.pages__sidebar {
+  display: block;
+}
+
+.pages__content {
+  flex: 1;
+}

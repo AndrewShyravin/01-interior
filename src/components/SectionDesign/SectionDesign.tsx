@@ -1,8 +1,8 @@
-import React from 'react';
-import './SectionDesign.css';
 import design_img from '../../image/design-img.png';
 import phone from '../../image/phone.svg';
 import btn__arrow from '../../image/arrow-btn.svg';
+import { Link } from 'react-router-dom';
+import './SectionDesign.css';
 
 const SectionDesign = () => {
   return (
@@ -27,10 +27,12 @@ const SectionDesign = () => {
                 <span>Call Us Anytime</span>
               </div>
             </div>
-            <button className="design__btn">
-              Get Free Estimate
-              <img src={btn__arrow} alt="arrow" />
-            </button>
+            <Link to="/contact">
+              <button className="design__btn">
+                Get Free Estimate
+                <img src={btn__arrow} alt="arrow" />
+              </button>
+            </Link>
           </div>
           <div>
             <img src={design_img} alt="" />

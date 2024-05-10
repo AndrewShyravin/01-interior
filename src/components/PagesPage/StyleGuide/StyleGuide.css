@@ -1,0 +1,24 @@
+.style {
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+
+.style__text {
+  padding-bottom: 50px;
+}
+
+.style__text h1 {
+  padding-bottom: 30px;
+}
+
+.style__text p {
+  text-align: left;
+  font-size: 22px;
+}
+
+.style__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}

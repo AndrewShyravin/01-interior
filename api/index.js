@@ -6,6 +6,8 @@ const personData = require('./data/persons.json');
 const projectsData = require('./data/projects.json');
 const contactsData = require('./data/contacts.json');
 const teamData = require('./data/team.json');
+const styleData = require('./data/style.json');
+const newsData = require('./data/news.json');
 
 const app = express();
 
@@ -49,6 +51,14 @@ app.get('/contacts', (req, res) => {
 
 app.get('/team', (req, res) => {
   res.json(teamData);
+});
+
+app.get('/style', (req, res) => {
+  res.json(styleData);
+});
+
+app.get('/news', (req, res) => {
+  res.json(newsData);
 });
 
 const port = process.env.PORT || 4000;

@@ -1,0 +1,22 @@
+.licenses {
+  margin-top: 10px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.licenses h1 {
+  padding-bottom: 30px;
+}
+
+.licenses__img {
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.licenses img {
+  width: 900px;
+}

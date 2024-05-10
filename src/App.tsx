@@ -9,14 +9,18 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import AboutUs from './components/AboutUsPage/AboutUs';
 import Services from './components/ServicesPage/Services';
-import Pages from './components/PagesPage/Pages';
+import Pages from './components/PagesPage/PagesComponent/Pages';
 import ContatcUs from './components/ContactUsPage/ContactUs';
 import MainLayout from './layouts/MainLayout';
-import './App.css';
 import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import { useAuth } from './hooks/useAuth';
 import AuthLayout from './layouts/AuthLayout';
+import './App.css';
+import { setStyle } from './redux/styleSlice';
+import NotFound from './components/PagesPage/NotFound/NotFound';
+import { setNews } from './redux/newsSlice';
+import News from './components/PagesPage/News/News';
 
 function App() {
   const dispatch = useAppDispatch();
@@ -69,6 +73,31 @@ function App() {
     addTeamViaAPI();
   }, []);
 
+  useEffect(() => {
+    const addStyleViaAPI = async () => {
+      try {
+        const res = await axios.get('http://localhost:4000/style');
+        dispatch(setStyle(res.data));
+      } catch (error) {
+        console.log('Error fetching projects');
+      }
+    };
+    addStyleViaAPI();
+  }, []);
+
+  useEffect(() => {
+    const addNewsViaAPI = async () => {
+      try {
+        const res = await axios.get('http://localhost:4000/news');
+        dispatch(setNews(res.data));
+        console.log(res.data);
+      } catch (error) {
+        console.log('Error fetching projects');
+      }
+    };
+    addNewsViaAPI();
+  }, []);
+
   const { isAuth } = useAuth();
 
   return (
@@ -77,10 +106,12 @@ function App() {
         {/* {isAuth ? ( */}
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/pages" element={<Pages />} />
-          <Route path="/contact" element={<ContatcUs />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="services" element={<Services />} />
+          <Route path="pages/*" element={<Pages />} />
+          <Route path="contact" element={<ContatcUs />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/lol" element={<News />} />
         </Route>
         {/* ) : (
           <Route path="/" element={<AuthLayout />}>
