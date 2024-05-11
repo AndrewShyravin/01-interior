@@ -1,0 +1,31 @@
+.services__item {
+  width: 340px;
+  height: 350px;
+  border-radius: 18px;
+  background-color: #F4F0EC;
+  padding: 20px;
+}
+
+.services__item-title {
+  font-size: 30px;
+  color: #292F36;
+}
+
+.services__item-text {
+  font-size: 16px;
+  height: 175px;
+}
+
+.services__item-img {
+  width: 50px;
+}
+
+.services__item-btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #292F36;
+  color: #F4F0EC;
+  font-size: 15px;
+  cursor: pointer;
+}
