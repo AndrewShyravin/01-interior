@@ -1,5 +1,5 @@
-import { useAppSelector } from '../../hooks/hooks';
-import { selectProjects } from '../../redux/projectsSlice';
+import { useAppSelector } from '../../../hooks/hooks';
+import { selectProjects } from '../../../redux/projectsSlice';
 import Projects from './Projects';
 import './SectionProjects.css';
 

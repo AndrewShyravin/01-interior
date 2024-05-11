@@ -1,6 +1,6 @@
-import './SectionJoin.css';
-import btn__arrow from '../../image/arrow-btn-black.svg';
 import { Link } from 'react-router-dom';
+import btn__arrow from '../../../image/arrow-btn-black.svg';
+import './SectionJoin.css';
 
 const SectionJoin = () => {
   return (

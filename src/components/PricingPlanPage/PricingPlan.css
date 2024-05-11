@@ -1,0 +1,22 @@
+.pricing {
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+
+.pricing h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.pricing__items {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}

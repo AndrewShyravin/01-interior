@@ -1,7 +1,6 @@
-import React from 'react';
-import arrow from '../../image/arrow.svg';
 import { useState } from 'react';
-import { ProjectType } from '../../types';
+import { ProjectType } from '../../../types';
+import arrow from '../../../image/arrow.svg';
 import './Projects.css';
 
 const Projects: React.FC<ProjectType> = ({ photo, title, text }) => {

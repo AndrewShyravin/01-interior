@@ -17,7 +17,6 @@ const ContactForm = () => {
         setSecondName('');
         setEmail('');
         setText('');
-        console.log(res);
       }
     } catch (error) {
       console.log(error);

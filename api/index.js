@@ -8,6 +8,7 @@ const contactsData = require('./data/contacts.json');
 const teamData = require('./data/team.json');
 const styleData = require('./data/style.json');
 const newsData = require('./data/news.json');
+const priceData = require('./data/pricing.json');
 
 const app = express();
 
@@ -59,6 +60,10 @@ app.get('/style', (req, res) => {
 
 app.get('/news', (req, res) => {
   res.json(newsData);
+});
+
+app.get('/prices', (req, res) => {
+  res.json(priceData);
 });
 
 const port = process.env.PORT || 4000;

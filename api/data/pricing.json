@@ -1,0 +1,52 @@
+[
+  {
+    "title": "virtual paint consultation",
+    "price": "$250.00",
+    "text": "Using Loom, Stephanie curates a color scheme for any space in your home. Interior/Exterior",
+    "variants": [
+      "30-minutes",
+      "specific paint selections",
+      "coordinating trim color + celling color",
+      "design board listing all details & finishes",
+      "$50 for each additional room"
+    ]
+  },
+  {
+    "title": "designer on demand - in person consultation",
+    "price": "$650.00",
+    "text": "Perfect for when you are... Planning ahead, stuck mid-project, or need help dialing in details.",
+    "variants": [
+      "3 hours of undivided attention to your design dillema",
+      "color consultations",
+      "paint consulations",
+      "furniture layout",
+      "styling services"
+    ]
+  },
+  {
+    "title": "elemental design package",
+    "price": "$1250.00",
+    "text": "Perfect for one room and DIYers who need professional guidance",
+    "variants": [
+      "30 minute project discovery phone call",
+      "2 design option for 1 room/space",
+      "opportunity to provide feedback to designer for revisions",
+      "1 revision round",
+      "final design board",
+      "product shopping list with links"
+    ]
+  },
+  {
+    "title": "3 rooms design standard",
+    "price": "$3375.00",
+    "text": "Initial consultation: phone call or if local, on site",
+    "variants": [
+      "two initial design boards/concepts",
+      "client review and feedback",
+      "one final room design based on feedback",
+      "product shopping list with wevsite links",
+      "detailed froor plan with set-up instruction",
+      "elevations of each wall with installation instructions"
+    ]
+  }
+]

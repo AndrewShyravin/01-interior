@@ -1,5 +1,5 @@
 import React from 'react';
-import { PersonType } from '../../types';
+import { PersonType } from '../../../types';
 import './People.css';
 const People: React.FC<PersonType> = ({ photo, name, city, text }) => {
   return (

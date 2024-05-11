@@ -1,5 +1,4 @@
-import React from 'react';
-import arrow_more from '../../image/arrow-more.svg';
+import arrow_more from '../../../image/arrow-more.svg';
 import './InfoItem.css';
 
 type InfoItemProps = {

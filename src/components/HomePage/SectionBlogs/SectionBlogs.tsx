@@ -1,5 +1,5 @@
-import { useAppSelector } from '../../hooks/hooks';
-import { selectBlogs } from '../../redux/blogsSlice';
+import { useAppSelector } from '../../../hooks/hooks';
+import { selectBlogs } from '../../../redux/blogsSlice';
 import Blog from './Blog';
 import './SectionBlogs.css';
 

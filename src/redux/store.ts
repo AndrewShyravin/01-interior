@@ -6,6 +6,7 @@ import userReducer from './userSlice';
 import teamReducer from './teamSlice';
 import styleReducer from './styleSlice';
 import newsReducer from './newsSlice';
+import priceReducer from './priceSlice';
 import { contactsApi } from './contactsApi';
 import {
   PersonType,
@@ -15,6 +16,7 @@ import {
   UserType,
   StyleType,
   NewsType,
+  PriceType,
 } from '../types';
 
 export type StoreType = {
@@ -25,6 +27,7 @@ export type StoreType = {
   team: TeamType[];
   style: StyleType[];
   news: NewsType[];
+  price: PriceType[];
 };
 
 const store = configureStore({
@@ -37,6 +40,7 @@ const store = configureStore({
     team: teamReducer,
     style: styleReducer,
     news: newsReducer,
+    price: priceReducer,
   },
   middleware: (getDefaultMiddware) =>
     getDefaultMiddware().concat(contactsApi.middleware),

@@ -28,13 +28,13 @@ const FooterTable = () => {
           <Link to="/about">About Us</Link>
         </p>
         <p>
-          <Link to=".">Recent Blog</Link>
+          <Link to="/recent">Recent Blog</Link>
         </p>
         <p>
-          <Link to=".">Pricing Plan</Link>
+          <Link to="/pricing">Pricing Plan</Link>
         </p>
         <p>
-          <Link to=".">Our Projects</Link>
+          <Link to="/projects">Our Projects</Link>
         </p>
         <p>
           <Link to="/contact">Contact Us</Link>

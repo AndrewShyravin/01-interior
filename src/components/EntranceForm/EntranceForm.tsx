@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Form.css';
+import './EntranceForm.css';
 
 type FromProps = {
   title: string;

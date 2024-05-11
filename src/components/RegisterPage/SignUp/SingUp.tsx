@@ -1,7 +1,7 @@
-import Form from '../Form/Form';
+import Form from '../../EntranceForm/EntranceForm';
 import { useNavigate } from 'react-router-dom';
-import { useAppDispatch } from '../../hooks/hooks';
-import { setUser } from '../../redux/userSlice';
+import { useAppDispatch } from '../../../hooks/hooks';
+import { setUser } from '../../../redux/userSlice';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
 const SingUp = () => {

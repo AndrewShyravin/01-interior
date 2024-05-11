@@ -1,6 +1,6 @@
-import btn__arrow from '../../image/arrow-btn.svg';
 import { Link } from 'react-router-dom';
-import '../SectionInterior/SectionInterior.css';
+import btn__arrow from '../../../image/arrow-btn.svg';
+import './SectionInterior.css';
 
 const SectionInteror = () => {
   return (

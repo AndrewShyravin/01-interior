@@ -2,6 +2,9 @@ import { setPersons } from './redux/personsSlice';
 import { setProjects } from './redux/projectsSlice';
 import { setBlogs } from './redux/blogsSlice';
 import { setTeam } from './redux/teamSlice';
+import { setPrice } from './redux/priceSlice';
+import { setNews } from './redux/newsSlice';
+import { setStyle } from './redux/styleSlice';
 import { useAppDispatch } from './hooks/hooks';
 import { useEffect } from 'react';
 import axios from 'axios';
@@ -17,10 +20,9 @@ import RegisterPage from './components/RegisterPage/RegisterPage';
 import { useAuth } from './hooks/useAuth';
 import AuthLayout from './layouts/AuthLayout';
 import './App.css';
-import { setStyle } from './redux/styleSlice';
 import NotFound from './components/PagesPage/NotFound/NotFound';
-import { setNews } from './redux/newsSlice';
 import News from './components/PagesPage/News/News';
+import PricingPlan from './components/PricingPlanPage/PricingPlan';
 
 function App() {
   const dispatch = useAppDispatch();
@@ -97,6 +99,18 @@ function App() {
     addNewsViaAPI();
   }, []);
 
+  useEffect(() => {
+    const addPriceViaAPI = async () => {
+      try {
+        const res = await axios.get('http://localhost:4000/prices');
+        dispatch(setPrice(res.data));
+      } catch (error) {
+        console.log('Error fetching projects');
+      }
+    };
+    addPriceViaAPI();
+  }, []);
+
   const { isAuth } = useAuth();
 
   return (
@@ -109,6 +123,7 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="pages/*" element={<Pages />} />
           <Route path="contact" element={<ContatcUs />} />
+          <Route path="pricing" element={<PricingPlan />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         {/* ) : (

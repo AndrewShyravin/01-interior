@@ -1,6 +1,6 @@
-import design_img from '../../image/design-img.png';
-import phone from '../../image/phone.svg';
-import btn__arrow from '../../image/arrow-btn.svg';
+import design_img from '../../../image/design-img.png';
+import phone from '../../../image/phone.svg';
+import btn__arrow from '../../../image/arrow-btn.svg';
 import { Link } from 'react-router-dom';
 import './SectionDesign.css';
 

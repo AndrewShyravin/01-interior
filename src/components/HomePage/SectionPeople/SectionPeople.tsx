@@ -1,7 +1,7 @@
-import { useAppSelector } from '../../hooks/hooks';
-import { selectPersons } from '../../redux/personsSlice';
+import { useAppSelector } from '../../../hooks/hooks';
+import { selectPersons } from '../../../redux/personsSlice';
 import People from './People';
-import '../SectionPeople/SectionPeople.css';
+import './SectionPeople.css';
 
 const SectionPeople = () => {
   const persons = useAppSelector(selectPersons);

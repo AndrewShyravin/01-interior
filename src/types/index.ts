@@ -5,3 +5,4 @@ export type { UserType } from './User';
 export type { TeamType } from './Team';
 export type { StyleType } from './Style';
 export type { NewsType } from './News';
+export type { PriceType } from './Price';

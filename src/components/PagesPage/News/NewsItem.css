@@ -5,14 +5,13 @@
 }
 
 .news__item-info {
-  /* background-color: #F4F0EC; */
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
 .news__item-img {
-  width: 385px;
+  max-width: 340px;
 }
 
 .news__item-title {

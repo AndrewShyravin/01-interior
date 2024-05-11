@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import './RegisterPage.css';
-import SingUp from '../SignUp/SingUp';
+import SingUp from './SignUp/SingUp';
 
 const RegisterPage = () => {
   return (
