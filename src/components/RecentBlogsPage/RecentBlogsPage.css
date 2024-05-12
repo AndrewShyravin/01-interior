@@ -1,5 +1,6 @@
-.section__blogs {
-  margin-bottom: 100px;
+.blogs__page {
+  margin-top: 10px;
+  margin-bottom: 150px;
 }
 
 .container {
@@ -8,10 +9,10 @@
   padding: 0 10px;
 }
 
-.blogs__top {
+.blogs__page-top {
   flex-direction: column;
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
 .blogs__title {

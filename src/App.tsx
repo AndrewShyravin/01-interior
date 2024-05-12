@@ -23,6 +23,7 @@ import './App.css';
 import NotFound from './components/PagesPage/NotFound/NotFound';
 import News from './components/PagesPage/News/News';
 import PricingPlan from './components/PricingPlanPage/PricingPlan';
+import RecentBlogsPage from './components/RecentBlogsPage/RecentBlogsPage';
 
 function App() {
   const dispatch = useAppDispatch();
@@ -124,6 +125,7 @@ function App() {
           <Route path="pages/*" element={<Pages />} />
           <Route path="contact" element={<ContatcUs />} />
           <Route path="pricing" element={<PricingPlan />} />
+          <Route path="recentblog" element={<RecentBlogsPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         {/* ) : (

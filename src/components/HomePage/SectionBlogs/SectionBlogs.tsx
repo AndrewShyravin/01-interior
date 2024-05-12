@@ -5,6 +5,7 @@ import './SectionBlogs.css';
 
 const SectionBlogs = () => {
   const blogs = useAppSelector(selectBlogs);
+  const selectedBlogs = blogs.slice(0, 6);
 
   return (
     <div className="section__blogs">
@@ -17,7 +18,7 @@ const SectionBlogs = () => {
           </p>
         </div>
         <div className="blogs__items">
-          {blogs.map((blog, index) => {
+          {selectedBlogs.map((blog, index) => {
             return (
               <Blog
                 photo={blog.photo}
