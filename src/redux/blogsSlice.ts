@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { BlogType } from '../types';
 import { StoreType } from './store';
 
@@ -8,7 +8,7 @@ const blogsSlice = createSlice({
   name: 'blogs',
   initialState,
   reducers: {
-    setBlogs: (state, action) => {
+    setBlogs: (state, action: PayloadAction<BlogType[]>) => {
       return (state = action.payload);
     },
   },

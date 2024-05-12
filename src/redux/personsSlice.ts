@@ -8,7 +8,7 @@ const personsSlice = createSlice({
   name: 'persons',
   initialState,
   reducers: {
-    setPersons: (state, action) => {
+    setPersons: (state, action: PayloadAction<PersonType[]>) => {
       return (state = action.payload);
     },
   },

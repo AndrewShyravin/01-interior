@@ -1,6 +1,7 @@
 import { IoIosMail } from 'react-icons/io';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaPhoneAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './ContactInfo.css';
 
 const ContactInfo = () => {
@@ -9,18 +10,18 @@ const ContactInfo = () => {
       <h1>Reach Us</h1>
       <ul>
         <li>
-          <a href="#">
+          <Link to="/contact">
             <FaMapMarkerAlt />
             53, East Birchwood Ave. Brooklyn, New York 11201, USA.
-          </a>
+          </Link>
         </li>
         <li>
           <IoIosMail />
-          <a href="mailto:contact@interno.com">contact@interno.com</a>
+          <Link to="mailto:contact@interno.com">contact@interno.com</Link>
         </li>
         <li>
           <FaPhoneAlt />
-          <a href="tel:1234567890">(123) 456 - 7890</a>
+          <Link to="tel:1234567890">(123) 456 - 7890</Link>
         </li>
       </ul>
     </div>

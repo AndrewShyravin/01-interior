@@ -43,13 +43,15 @@ const FooterTable = () => {
       <div>
         <h1>Contact</h1>
         <p>
-          <a href="#">53, East Birchwood Ave. Brooklyn, New York 11201, USA.</a>
+          <Link to="/contact">
+            53, East Birchwood Ave. Brooklyn, New York 11201, USA.
+          </Link>
         </p>
         <p>
-          <a href="mailto:contact@interno.com">contact@interno.com</a>
+          <Link to="mailto:contact@interno.com">contact@interno.com</Link>
         </p>
         <p>
-          <a href="tel:1234567890">(123) 456 - 7890</a>
+          <Link to="tel:1234567890">(123) 456 - 7890</Link>
         </p>
       </div>
     </div>

@@ -29,87 +29,26 @@ function App() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const addPersonsViaAPI = async () => {
+    const fetchData = async (url: string, action: any) => {
       try {
-        const res = await axios.get('http://localhost:4000/persons');
-        dispatch(setPersons(res.data));
+        const res = await axios.get(`http://localhost:4000/${url}`);
+        dispatch(action(res.data));
       } catch (error) {
-        console.log('Error fetching persons');
+        console.error(`Error fetching ${url}:`, error);
       }
     };
-    addPersonsViaAPI();
-  }, []);
 
-  useEffect(() => {
-    const addProjectsViaAPI = async () => {
-      try {
-        const res = await axios.get('http://localhost:4000/projects');
-        dispatch(setProjects(res.data));
-      } catch (error) {
-        console.log('Error fetching projects');
-      }
-    };
-    addProjectsViaAPI();
-  }, []);
+    const dataRequests = [
+      { url: 'persons', action: setPersons },
+      { url: 'projects', action: setProjects },
+      { url: 'blogs', action: setBlogs },
+      { url: 'team', action: setTeam },
+      { url: 'style', action: setStyle },
+      { url: 'news', action: setNews },
+      { url: 'prices', action: setPrice },
+    ];
 
-  useEffect(() => {
-    const addBlogsViaAPI = async () => {
-      try {
-        const res = await axios.get('http://localhost:4000/blogs');
-        dispatch(setBlogs(res.data));
-      } catch (error) {
-        console.log('Error fetching blogs');
-      }
-    };
-    addBlogsViaAPI();
-  }, []);
-
-  useEffect(() => {
-    const addTeamViaAPI = async () => {
-      try {
-        const res = await axios.get('http://localhost:4000/team');
-        dispatch(setTeam(res.data));
-      } catch (error) {
-        console.log('Error fetching projects');
-      }
-    };
-    addTeamViaAPI();
-  }, []);
-
-  useEffect(() => {
-    const addStyleViaAPI = async () => {
-      try {
-        const res = await axios.get('http://localhost:4000/style');
-        dispatch(setStyle(res.data));
-      } catch (error) {
-        console.log('Error fetching projects');
-      }
-    };
-    addStyleViaAPI();
-  }, []);
-
-  useEffect(() => {
-    const addNewsViaAPI = async () => {
-      try {
-        const res = await axios.get('http://localhost:4000/news');
-        dispatch(setNews(res.data));
-      } catch (error) {
-        console.log('Error fetching projects');
-      }
-    };
-    addNewsViaAPI();
-  }, []);
-
-  useEffect(() => {
-    const addPriceViaAPI = async () => {
-      try {
-        const res = await axios.get('http://localhost:4000/prices');
-        dispatch(setPrice(res.data));
-      } catch (error) {
-        console.log('Error fetching projects');
-      }
-    };
-    addPriceViaAPI();
+    dataRequests.forEach(({ url, action }) => fetchData(url, action));
   }, []);
 
   const { isAuth } = useAuth();
@@ -117,25 +56,25 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        {/* {isAuth ? ( */}
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutUs />} />
-          <Route path="services" element={<Services />} />
-          <Route path="pages/*" element={<Pages />} />
-          <Route path="contact" element={<ContatcUs />} />
-          <Route path="pricing" element={<PricingPlan />} />
-          <Route path="recentblog" element={<RecentBlogsPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-        {/* ) : (
+        {isAuth ? (
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="about" element={<AboutUs />} />
+            <Route path="services" element={<Services />} />
+            <Route path="pages/*" element={<Pages />} />
+            <Route path="contact" element={<ContatcUs />} />
+            <Route path="pricing" element={<PricingPlan />} />
+            <Route path="recentblog" element={<RecentBlogsPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        ) : (
           <Route path="/" element={<AuthLayout />}>
             <Route index element={<RegisterPage />} />
             <Route path="login" element={<LoginPage />} />
             <Route path="register" element={<RegisterPage />} />
           </Route>
-        )} */}
+        )}
       </Routes>
     </div>
   );
