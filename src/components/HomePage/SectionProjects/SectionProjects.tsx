@@ -5,7 +5,7 @@ import './SectionProjects.css';
 
 const SectionProjects = () => {
   const projects = useAppSelector(selectProjects);
-
+  const selectedProjects = projects.slice(0, 4);
   return (
     <div className="section__projects">
       <div className="container">
@@ -19,7 +19,7 @@ const SectionProjects = () => {
             </p>
           </div>
           <div className="projects__items">
-            {projects.map((project, index) => {
+            {selectedProjects.map((project, index) => {
               return (
                 <Projects
                   title={project.title}

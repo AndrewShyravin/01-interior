@@ -19,11 +19,11 @@ import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import { useAuth } from './hooks/useAuth';
 import AuthLayout from './layouts/AuthLayout';
-import './App.css';
 import NotFound from './components/PagesPage/NotFound/NotFound';
-import News from './components/PagesPage/News/News';
 import PricingPlan from './components/PricingPlanPage/PricingPlan';
 import RecentBlogsPage from './components/RecentBlogsPage/RecentBlogsPage';
+import './App.css';
+import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 
 function App() {
   const dispatch = useAppDispatch();
@@ -126,6 +126,7 @@ function App() {
           <Route path="contact" element={<ContatcUs />} />
           <Route path="pricing" element={<PricingPlan />} />
           <Route path="recentblog" element={<RecentBlogsPage />} />
+          <Route path="projects" element={<ProjectsPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         {/* ) : (

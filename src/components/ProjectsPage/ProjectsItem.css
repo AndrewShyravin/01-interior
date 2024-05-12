@@ -16,6 +16,10 @@
   padding-top: 30px;
 }
 
+.projects__item-img {
+  border-top-right-radius: 70px;
+}
+
 .project__btn {
   height: 70px;
   width: 70px;

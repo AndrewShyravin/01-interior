@@ -7,7 +7,7 @@
   {
     "photo": "image/projects-2.png",
     "title": "Creative Workplace Design",
-    "text": "Minimalist"
+    "text": "Minimalism"
   },
   {
     "photo": "image/projects-3.png",
@@ -18,5 +18,25 @@
     "photo": "image/projects-4.png",
     "title": "Light Ambience Sepia Design",
     "text": "Scandinavian"
+  },
+  {
+    "photo": "image/projects-5.jpg",
+    "title": "Eco Retreat Oasis",
+    "text": "High-Tech"
+  },
+  {
+    "photo": "image/projects-6.jpg",
+    "title": "Coastal Serenity Escape",
+    "text": "Modern"
+  },
+  {
+    "photo": "image/projects-7.jpg",
+    "title": "Urban Chic Loft",
+    "text": "Loft"
+  },
+  {
+    "photo": "image/projects-8.jpg",
+    "title": "Minimalist Modern Haven",
+    "text": "Minimalism"
   }
 ]

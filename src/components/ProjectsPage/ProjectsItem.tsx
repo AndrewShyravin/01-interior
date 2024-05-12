@@ -1,9 +1,8 @@
-import { ProjectType } from '../../../types';
-import { Link } from 'react-router-dom';
-import arrow from '../../../image/arrow.svg';
-import './Projects.css';
+import { ProjectType } from '../../types';
+import arrow from '../../image/arrow.svg';
+import './ProjectsItem.css';
 
-const Projects: React.FC<ProjectType> = ({ photo, title, text }) => {
+const ProjectsItem: React.FC<ProjectType> = ({ photo, title, text }) => {
   return (
     <div className="projects__item">
       <img className="projects__item-img" src={photo} alt="photo" />
@@ -12,14 +11,14 @@ const Projects: React.FC<ProjectType> = ({ photo, title, text }) => {
           <p className="item__title">{title}</p>
           <p className="item__text">{text}</p>
         </div>
-        <Link to="/projects">
-          <button className="project__btn">
+        <button className="project__btn">
+          <a href="#">
             <img src={arrow} alt="arrow" />
-          </button>
-        </Link>
+          </a>
+        </button>
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsItem;
