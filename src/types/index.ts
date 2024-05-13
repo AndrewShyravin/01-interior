@@ -6,3 +6,4 @@ export type { TeamType } from './Team';
 export type { StyleType } from './Style';
 export type { NewsType } from './News';
 export type { PriceType } from './Price';
+export type { ErrorType } from './Error';

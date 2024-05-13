@@ -24,6 +24,8 @@ import PricingPlan from './components/PricingPlanPage/PricingPlan';
 import RecentBlogsPage from './components/RecentBlogsPage/RecentBlogsPage';
 import './App.css';
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
+import { setError } from './redux/errorSlice';
+import Error from './components/Error/Error';
 
 function App() {
   const dispatch = useAppDispatch();
@@ -34,7 +36,7 @@ function App() {
         const res = await axios.get(`http://localhost:4000/${url}`);
         dispatch(action(res.data));
       } catch (error) {
-        console.error(`Error fetching ${url}:`, error);
+        dispatch(setError("Data wasn't been gotten"));
       }
     };
 
@@ -76,6 +78,7 @@ function App() {
           </Route>
         )}
       </Routes>
+      <Error />
     </div>
   );
 }

@@ -18,6 +18,7 @@ import teamReducer from './teamSlice';
 import styleReducer from './styleSlice';
 import newsReducer from './newsSlice';
 import priceReducer from './priceSlice';
+import errorReducer from './errorSlice';
 import { contactsApi } from './contactsApi';
 import {
   PersonType,
@@ -28,6 +29,7 @@ import {
   StyleType,
   NewsType,
   PriceType,
+  ErrorType,
 } from '../types';
 
 export type StoreType = {
@@ -39,6 +41,7 @@ export type StoreType = {
   style: StyleType[];
   news: NewsType[];
   price: PriceType[];
+  error: ErrorType;
 };
 
 const rootReducer = combineReducers({
@@ -51,6 +54,7 @@ const rootReducer = combineReducers({
   style: styleReducer,
   news: newsReducer,
   price: priceReducer,
+  error: errorReducer,
 });
 
 const persistConfig = {

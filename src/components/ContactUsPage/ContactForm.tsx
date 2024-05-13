@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { useAddContactsMutation } from '../../redux/contactsApi';
+import { useAppDispatch } from '../../hooks/hooks';
+import { setError } from '../../redux/errorSlice';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -8,20 +12,29 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [text, setText] = useState('');
   const [addContacts] = useAddContactsMutation();
+  const dispatch = useAppDispatch();
 
   const handleAddContacts = async () => {
-    try {
+    if (navigator.onLine) {
       if (firstName && secondName && email && text) {
-        const res = await addContacts({ firstName, secondName, email, text });
-        setFirstName('');
-        setSecondName('');
-        setEmail('');
-        setText('');
+        try {
+          await addContacts({ firstName, secondName, email, text });
+          setFirstName('');
+          setSecondName('');
+          setEmail('');
+          setText('');
+          toast.success('Your data was sended');
+        } catch (error) {
+          dispatch(setError('Error sending form data'));
+        }
+      } else {
+        dispatch(setError('Please fill out all fields'));
       }
-    } catch (error) {
-      console.log(error);
+    } else {
+      dispatch(setError('No internet connection'));
     }
   };
+
   return (
     <div className="contact__form-form">
       <form>

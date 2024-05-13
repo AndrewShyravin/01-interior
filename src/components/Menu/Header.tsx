@@ -1,10 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../hooks/hooks';
 import { deleteUser } from '../../redux/userSlice';
 import logo from '../../image/logo.svg';
-import './Menu.css';
+import './Header.css';
 
 const Header = () => {
+  const navigate = useNavigate();
   const dispatch = useAppDispatch();
   return (
     <>
@@ -40,7 +41,14 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <button onClick={() => dispatch(deleteUser())}>Logout</button>
+          <button
+            onClick={() => {
+              dispatch(deleteUser());
+              navigate('/');
+            }}
+          >
+            Logout
+          </button>
         </nav>
       </div>
     </>
